@@ -1,0 +1,25 @@
+meme_dict = {
+    "CRINGE": "Algo excepcionalmente raro o embarazoso",
+    "LOL": "Una respuesta común a algo gracioso",
+    "ROFL": "Una respuesta a una broma",
+    "SHEESH": "Ligera desaprobación",
+    "CREEPY": "Aterrador, siniestro",
+    "AGGRO": "Ponerse agresivo/enojado",
+    "BOOMER": "Forma despectiva para contestar a las personas mayores",
+    "CRUSH": "Amor imediato o imposible que lo mas seguro es que jamas se logre",
+    "AWESOMESACUCE": "Algo asombrosamente increible",
+    "BTW": "Por cierto"
+    }
+
+pregunta = input("Hola, ¿te gustaría saber el significado de alguna expresión que no sepas? (y/n)")
+print("")
+
+if pregunta == "y":
+    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+    
+    if word in meme_dict.keys():
+        print("La palabra que buscas ", word, " significa ", meme_dict[word])
+    else:
+        print("No se encontró la palabra que buscas: ", word)
+else:
+    print("¡Qué cool eres!")
